@@ -114,7 +114,7 @@ window.addEventListener("resize", () => {
 
 // TEXT
 const fontLoader = new FontLoader();
-fontLoader.load("/FIGTREE.json", (font) => {
+fontLoader.load(import.meta.env.BASE_URL + "FIGTREE.json", (font) => {
   const textGeo = new TextGeometry("ONEACCORD", {
     font: font,
     size: 30,
